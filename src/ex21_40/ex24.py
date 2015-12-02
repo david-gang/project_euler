@@ -11,7 +11,7 @@ def lexographic_permutation(n,index):
         perms.append(initial_arr.pop(j))
         counter = counter//i
     perms.append(initial_arr[0])
-    return "".join(str(x) for x in perms)
+    return "".join(map(str,perms))
     
 res = lexographic_permutation(10,10**6)
 
