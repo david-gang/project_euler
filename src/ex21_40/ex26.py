@@ -3,6 +3,10 @@ import itertools
 from decimal import *
 getcontext().prec = 2000
 
+"""
+Stupid documentation
+"""
+
 def reciprocal_cycle_length(n):
     print(n)
     right_side = str(Decimal(1)/Decimal(n))[2:]
@@ -28,13 +32,13 @@ def reciprocal_cycle_length(n):
             max_cycle_all = max_cycle 
     return max_cycle_length_all        
     
-
-start = time.clock()
-reciprocal_generator = ((i,Decimal(1)/Decimal(i), reciprocal_cycle_length(i)) for i in range(2,1000))
-res = max(reciprocal_generator, key = lambda x:x[2])
-print(res)
-end = time.clock()
-print("It took ",end - start," seconds")
+if __name__ == "__main__":
+	start = time.clock()
+	reciprocal_generator = ((i,Decimal(1)/Decimal(i), reciprocal_cycle_length(i)) for i in range(2,1000))
+	res = max(reciprocal_generator, key = lambda x:x[2])
+	print(res)
+	end = time.clock()
+	print("It took ",end - start," seconds")
 
           
     

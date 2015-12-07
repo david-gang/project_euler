@@ -14,12 +14,12 @@ def lexographic_permutation(n,index):
     return "".join(map(str,perms))
     
 
-
-start = time.clock()
-res = lexographic_permutation(10,10**6)
-end = time.clock()
-print(res)
-print("It took ",end - start," seconds")
+if __name__ == "__main__":
+	start = time.clock()
+	res = lexographic_permutation(10,10**6)
+	end = time.clock()
+	print(res)
+	print("It took ",end - start," seconds")
 
           
     

@@ -26,15 +26,5 @@ def count_sundays_first_of_month():
             if d == 0:
                 count = count + 1
     return count
-                 
-    
-
-
-start = time.clock()
-res = count_sundays_first_of_month()
-end = time.clock()
-print(res)
-print("It took ",end - start," seconds")
-
           
     
