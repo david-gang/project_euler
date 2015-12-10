@@ -12,6 +12,8 @@ def binary_search(a, x, lo=0, hi=None):   # can't use a to specify default for h
 
 def is_prime(n):
     global highest_number_checked_for_primes
+    if n<2:
+        return False
     if n<=highest_number_checked_for_primes:
         return binary_search(primes, n) != -1
     

@@ -4,6 +4,11 @@ import time
 Stupid documentation
 """
 
+def max_reciprocal_cycle_length():
+    reciprocal_generator = (reciprocal_cycle_length(i) for i in range(2,1000))
+    res = max(reciprocal_generator)
+    return res
+
 def reciprocal_cycle_length(n):
     quotients = {}
     m = 10
@@ -19,9 +24,7 @@ def reciprocal_cycle_length(n):
     
 if __name__ == "__main__":
 	start = time.clock()
-	reciprocal_generator = (reciprocal_cycle_length(i) for i in range(2,1000))
-	res = max(reciprocal_generator)
-	print(res)
+	print(max_reciprocal_cycle_length())
 	end = time.clock()
 	print("It took ",end - start," seconds")
 
