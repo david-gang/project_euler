@@ -1,5 +1,5 @@
 import unittest
-from . import ex22, ex24, ex25, ex26, ex27
+from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29
 
 class TestEx21_40(unittest.TestCase):
     def testEx22(self):
@@ -16,4 +16,10 @@ class TestEx21_40(unittest.TestCase):
         
     def testEx27(self):
         self.assertEqual(ex27.max_prime_sequence(),-59231)
+        
+    def testEx28(self):
+        self.assertEqual(ex28.spiral_diagonals_sum(1001),669171001)
+        
+    def testEx29(self):
+        self.assertEqual(ex29.distinct_powers(100, 100),9183)
             
