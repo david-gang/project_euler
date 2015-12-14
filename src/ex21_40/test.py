@@ -1,5 +1,5 @@
 import unittest
-from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31, ex32, ex33
+from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31, ex32, ex33, ex34
 
 class TestEx21_40(unittest.TestCase):
     def testEx22(self):
@@ -34,4 +34,7 @@ class TestEx21_40(unittest.TestCase):
         
     def testEx33(self):
         self.assertEqual(ex33.cancel_digit_fractions(), 100)
+        
+    def testEx34(self):
+        self.assertEqual(ex34.digit_factorials(), 40730)
             
