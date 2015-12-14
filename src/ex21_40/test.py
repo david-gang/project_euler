@@ -1,5 +1,5 @@
 import unittest
-from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31
+from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31, ex32
 
 class TestEx21_40(unittest.TestCase):
     def testEx22(self):
@@ -28,4 +28,7 @@ class TestEx21_40(unittest.TestCase):
         
     def testEx31(self):
         self.assertEqual(ex31.coin_sums(200),73682)
+    
+    def testEx32(self):
+        self.assertEqual(ex32.pandigital_products(), 45228)
             
