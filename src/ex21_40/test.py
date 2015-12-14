@@ -1,5 +1,5 @@
 import unittest
-from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30
+from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31
 
 class TestEx21_40(unittest.TestCase):
     def testEx22(self):
@@ -25,4 +25,7 @@ class TestEx21_40(unittest.TestCase):
         
     def testEx30(self):
         self.assertEqual(ex30.digit_powers(5),443839)
+        
+    def testEx31(self):
+        self.assertEqual(ex31.coin_sums(200),73682)
             
