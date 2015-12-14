@@ -1,5 +1,5 @@
 import unittest
-from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31, ex32, ex33, ex34, ex35, ex36, ex37
+from . import ex22, ex24, ex25, ex26, ex27, ex28, ex29, ex30, ex31, ex32, ex33, ex34, ex35, ex36, ex37, ex38
 
 class TestEx21_40(unittest.TestCase):
     def testEx22(self):
@@ -43,4 +43,6 @@ class TestEx21_40(unittest.TestCase):
        self.assertEqual(ex36.decimal_and_binary_palindrom(), 872187)
     def testEx37(self):
        self.assertEqual(ex37.truncatables_primes(), 748317)
+    def testEx38(self):
+       self.assertEqual(ex38.pandigital_multiples(), 932718654)
             
