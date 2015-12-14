@@ -37,4 +37,6 @@ class TestEx21_40(unittest.TestCase):
         
     def testEx34(self):
         self.assertEqual(ex34.digit_factorials(), 40730)
+    def testEx35(self):
+       self.assertEqual(ex35.circular_primes(), 55)
             
